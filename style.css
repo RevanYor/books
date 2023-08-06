@@ -13,3 +13,16 @@ body {
     height: 400px;
     background-color: white;
 }
+
+.for {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border: solid 1px blue;
+}
+
+.dis {
+    display: none;
+}
