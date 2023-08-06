@@ -20,8 +20,14 @@ butt.addEventListener('click', () => {
     console.log(pa); */
 })
 
-sub.addEventListener('click', () => {
-    console.log(ti);
+sub.addEventListener('click', (event) => {
+    event.preventDefault();
+    myLibrary.push(new Book(`${ti.value}`,`${au.value}`,`${pa.value}`,true));
+    const bok = document.createElement('div');
+    bok.classList.add('card');
+    bok.innerText = myLibrary[myLibrary.length - 1].info();
+    body.appendChild(bok);
+    formu.classList.add('dis');
 })
 
 //Constructor
@@ -43,9 +49,9 @@ myLibrary.push(sicp);
 //-----------------------------------------------------
 
 //Add to Array
-myLibrary.forEach((book) => {
+/* myLibrary.forEach((book) => {
     const bok = document.createElement('div');
     bok.classList.add('card');
-    bok.innerText = sicp.info();
+    bok.innerText = book.info();
     body.appendChild(bok);
-});
+}); */
