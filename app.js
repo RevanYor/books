@@ -21,7 +21,7 @@ butt.addEventListener('click', () => {
 })
 
 sub.addEventListener('click', () => {
-    console.log(ti.innerText);
+    console.log(ti);
 })
 
 //Constructor
